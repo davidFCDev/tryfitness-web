@@ -1,0 +1,111 @@
+.centers {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    background-image: url('/assets/images/box.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 49.7%;
+    height: 100%;
+    display: flex;
+}
+
+.zenter {
+    background-image: url('/assets/images/zenter.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 49.8%;
+    height: 100%;
+    display: flex;
+}
+
+.center-large {
+    background: linear-gradient(220deg, transparent 70%, #000000 700px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.center-text {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 1.3rem;
+}
+
+.center-text p {
+    font-size: 14px;
+}
+
+.center-btn {
+    background-color: #D31742;
+    color: #f3f3f3;
+    text-shadow: 2px 2px 0px black;
+    border-radius: 1px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+    .center-container {
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+    }
+    .centers-btn {
+        padding: 0.2rem 0.3rem;
+        font-size: 10px;
+    }
+    .box {
+        width: 100%;
+        height: 49.7%;
+        display: flex;
+    }
+    .zenter {
+        width: 100%;
+        height: 49.7%;
+        display: flex;
+    }
+    .center-text {
+        width: 130px;
+        margin: 1rem;
+    }
+    .center-text p {
+        font-size: 13px;
+    }
+    .center-large {
+        background: linear-gradient(220deg, transparent 33%, #000000 500px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center-container {
+        height: 250px;
+    }
+    .center-text {
+        width: 110px;
+        margin: 1rem;
+    }
+    .center-text p {
+        font-size: 11px;
+    }
+    .center-large {
+        background: linear-gradient(220deg, transparent 53%, #000000 400px);
+    }
+}

@@ -1,0 +1,102 @@
+.navbar {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar li:hover {
+	color: #d11742;
+	transform: scale(1.05);
+}
+
+.navbar li:active {
+	color: #d11742;
+}
+
+.navbar-logo {
+	width: 100px;
+	opacity: 0.9;
+}
+
+.navbar-horizontal {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1.8rem;
+}
+
+.navbar-vertical {
+	display: none;
+	flex: 1 1 0%;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 1rem;
+}
+
+.navbar-vertical-container {
+	padding: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.86);
+	position: absolute;
+	top: 100%;
+	right: 2%;
+	margin: 1rem 0.5rem;
+	min-width: 140px;
+	border-radius: 15px;
+}
+
+.vertical-list {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1 1 0%;
+	gap: 15px;
+	font-size: 15px;
+}
+
+.vertical-list li {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: rgb(235, 235, 235);
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.86);
+		box-shadow: 0 0 3px #333333;
+		padding: 0.6rem 1rem;
+		position: fixed;
+	}
+	.navbar-horizontal {
+		display: none;
+	}
+	.navbar-vertical {
+		display: flex;
+	}
+	.navbar-logo {
+		width: 80px;
+		opacity: 0.9;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.navbar {
+		background: rgba(0, 0, 0, 0.86);
+		padding: 0.6rem 1rem;
+		font-size: 13px;
+	}
+	.navbar-logo {
+		width: 70px;
+	}
+}

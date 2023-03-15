@@ -1,0 +1,187 @@
+.class {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.classA {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.classB {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wod {
+    background-image: url('/assets/images/wod.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50.5%;
+    height: 100%;
+    display: flex;
+}
+
+.aerial {
+    background-image: url('/assets/images/aerial.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 49%;
+    height: 100%;
+    display: flex;
+}
+
+.openbox {
+    background-image: url('/assets/images/openbox.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 100%;
+    display: flex;
+}
+
+.try45 {
+    background-image: url('/assets/images/try45.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 100%;
+    display: flex;
+}
+
+
+.endurance {
+    background-image: url('/assets/images/endurance.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 33%;
+    height: 100%;
+    display: flex;
+}
+
+.class-large {
+    background: linear-gradient(220deg, transparent 65%, #000000 680px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.class-small {
+    background: linear-gradient(220deg, transparent 53%, #000000 550px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.class-text {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 1.5rem;
+}
+
+.class-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: 3px 2px 0 #000000;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.class-text p {
+    color: #f4f4f4;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .class-container {
+        gap: 0.3rem;
+    }
+    .classA {
+        width: 100%;
+        height: 600px;
+        flex-direction: column;
+    }
+    .classB {
+        width: 100%;
+        height: 900px;
+        flex-direction: column;
+    }
+    .class-text {
+        width: 140px;
+        margin: 1rem;
+    }
+    .class-text h2 {
+        font-size: 22px;
+    }
+    .class-text p {
+        font-size: 13px;
+    }
+    .wod {
+        width: 100%;
+        height: 49.7%;
+    }
+    .aerial {
+        width: 100%;
+        height: 49.7%;
+    }
+    .openbox {
+        width: 100%;
+        height: 33%;
+    }
+    .try45 {
+        width: 100%;
+        height: 33%;
+    }
+    .endurance {
+        width: 100%;
+        height: 33%;
+    }
+    .class-small {
+        background: linear-gradient(220deg, transparent 60%, #000000 430px);
+    }
+    .class-large {
+        background: linear-gradient(220deg, transparent 60%, #000000 430px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px) {
+    .class-container {
+        height: 500px;
+        gap: 0.2rem;
+    }
+    .class-text {
+        width: 140px;
+        margin: 1rem;
+    }
+    .class-text h2 {
+        font-size: 18px;
+    }
+    .class-text p {
+        font-size: 11px;
+    }
+    .class-small {
+        background: linear-gradient(220deg, transparent 65%, #000000 320px);
+    }
+    .class-large {
+        background: linear-gradient(220deg, transparent 55%, #000000 400px);
+    }
+}

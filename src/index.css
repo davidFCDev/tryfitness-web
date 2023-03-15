@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tilt+Warp&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+}
+
+.paddingX {
+  padding: 0rem 1.5rem;
+}
+
+/** Btn Timetable/Prices */
+
+.btn-rounded {
+	color: hsl(0, 0%, 81%);
+	position: absolute;
+	top: 2.5rem;
+	left: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.door-icon {
+	font-size: 30px;
+}
+
+.door-icon:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+/* */
+
+/** Nav Timetable/Prices */
+
+.nav-sections {
+  position: relative;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-try {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-try img {
+  width: 120px;
+}
+
+/* */
+
+.section-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  padding: 0.8rem;
+  margin: 0.4rem 0rem;
+  letter-spacing: 5px;
+  background-color: black;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  background-image: url('/assets/images/fondo3.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.screen-gradient {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.496)20px,
+      transparent 30%,
+      rgba(0, 0, 0, 0.444)
+  );
+  bottom: 0;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .paddingX {
+    padding: 0rem 0.5rem;
+  }
+  .screen {
+      background-image: url('/assets/images/fondo5.webp');
+  }
+  .screen-gradient {
+      background: rgba(0, 0, 0, 0.4);
+      background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.496) 0,
+        transparent 10%,
+        rgba(0, 0, 0, 0.575)
+    );
+  }
+  .section-title {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin: 0.2rem 0;
+  }
+
+}
+
+
+/** Bg Gradient */
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #c5c5c5 -278.56%,
+    #494949 -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    144.39deg,
+    #c5c5c5 -278.56%,
+    #313131 -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+/* */
+
+

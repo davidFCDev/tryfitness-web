@@ -1,0 +1,141 @@
+
+.footer {
+    width: 100%;
+    height: 380px;
+    background: #000;
+    color: rgba(214, 214, 214, 0.705);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.footer-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.list-element {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer li p, .footer li a {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.footer-list-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.text-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#portfolio {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#portfolio span{
+    font-weight: bold;
+}
+
+#portfolio:hover {
+    transform: scale(1.1);
+}
+
+.text-legal-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text-legal-list p:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        height: 500px;
+        padding: 2rem 3rem;
+    }
+    .footer-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 5rem;
+        row-gap: 3rem;
+    }
+    .list-element {
+        width: 140px;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .footer-list-title {
+        gap: 5px;
+    }
+    .footer h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .footer li p, .footer li a {
+        font-size: 13px;
+    }
+    .text-legal-list {
+        gap: 0.8rem;
+    }
+    #portfolio {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        height: 330px;
+        padding: 2rem 1rem;
+    }
+    .footer li {
+        width: 140px;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .footer h2 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .footer li p, .footer li a {
+        font-size: 12px;
+    }
+
+    #portfolio {
+        font-size: 12px;
+    }
+}

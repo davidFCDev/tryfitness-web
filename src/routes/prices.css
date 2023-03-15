@@ -1,0 +1,262 @@
+
+.prices {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.prices-section {
+    border-top: 1px solid rgb(91, 92, 104);
+	border-bottom: 1px solid rgb(91, 92, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 8rem 1rem;
+    gap:5rem;
+}
+
+.general-prices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.exclusive-prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prices-section h1 {
+    font-size: 24px;
+	font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.prices-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prices-title p {
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(229, 229, 229);
+}
+
+.prices-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
+        0 4px 6px -4px rgba(93, 93, 93, 0.4);
+    border-radius: 10px;
+    background-color: #ffffffdd;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+.content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content .price {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.content .description p {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
+}
+
+.content .title-container {
+    background-color: #d11742;
+    padding: 4px;
+    width: 180px;
+    margin-left: 40px;
+    border-bottom-left-radius: 15px;
+    text-shadow: 1px 1px 0 white;
+}
+
+.content .title-container-zenter {
+    background-color: #00ac8f;
+    padding: 4px;
+    width: 180px;
+    margin-left: 40px;
+    border-bottom-left-radius: 15px;
+    text-shadow: 1px 1px 0 white;
+}
+
+.content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.878);
+    margin-right: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content .subtitle {
+    color: #d11742;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.content .subtitle-zenter {
+    color: #00ac8f;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .prices-container {
+        flex-direction: column;
+    }
+    .prices-title {
+        width:82%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .prices-section h1 {
+        font-size: 28px;
+        font-weight: 600;
+
+    }
+    .prices-container {
+        margin: 1rem 0;
+        gap: 4rem;
+    }
+    .card {
+        width: 320px;
+        height: 420px;
+    }
+    .content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .content .price {
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 45px;
+    }
+    
+    .content .description p {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+    .content .title-container {
+        background-color: #d11742;
+        padding: 0.9rem;
+        width: 300px;
+        margin-left: 50px;
+        border-bottom-left-radius: 20px;
+        text-shadow: 2px 2px 2px white;
+    }
+    .content .title-container-zenter {
+        background-color: #00ac8f;
+        padding: 0.9rem;
+        width: 300px;
+        margin-left: 50px;
+        border-bottom-left-radius: 20px;
+        text-shadow: 2px 2px 2px white;
+    }
+    .content .title {
+        margin-right: 50px;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .content .subtitle {
+        font-size: 24px;
+    }
+    
+    .content .subtitle-zenter {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .prices-title {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.5rem;
+    }
+    .prices-container {
+
+    }
+    .card {
+        width: 165px;
+        height: 220px;
+    }
+    .content {
+
+    }
+    .content .price {
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 22px;
+    }
+    
+    .content .description p {
+        font-size: 12px;
+    }
+    .content .title-container {
+        padding: 3px;
+        width: 145px;
+        margin-left: 35px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .content .title-container-zenter {
+        padding: 3px;
+        width: 145px;
+        margin-left: 35px;
+        border-bottom-left-radius: 15px;
+    }
+    .content .title {
+        margin-right: 35px;
+        font-size: 20px;
+    }
+    .content .subtitle {
+        font-size: 14px;
+    }
+    
+    .content .subtitle-zenter {
+        font-size: 14px;
+    }
+}

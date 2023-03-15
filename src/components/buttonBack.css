@@ -1,0 +1,29 @@
+.back-btn {
+	position: fixed;
+	z-index: 1;
+	background-color: #D31742;
+	color: white;
+	font-size: 30px;
+	bottom: 2%;
+	right: 1%;
+	padding: 0.4rem;
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgb(0, 0, 0);
+}
+
+.back-btn:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+	.back-btn {
+		font-size: 20px;
+		bottom: 1%;
+		right: 1%;
+		padding: 0.5rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

@@ -1,0 +1,52 @@
+.legal {
+    color: black;
+}
+
+.legal-header {
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.legal-header img {
+    width: 120px;
+}
+
+.legal-text {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1.5rem;
+}
+
+.legal-text h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.legal-text h2 {
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+
+.legal-parraf {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 767px) {
+    .legal-text h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .legal-text {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

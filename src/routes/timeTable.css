@@ -1,0 +1,107 @@
+.timetable {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.timetable-section {
+	border-top: 1px solid rgb(91, 92, 104);
+	border-bottom: 1px solid rgb(91, 92, 104);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 2rem 6rem 2rem;
+}
+
+.timetables-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.table-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.table-container h2 {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.box-text {
+	color: #c83e5e;
+	text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.zenter-text {
+	color: rgb(81, 233, 233);
+	text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.table-box {
+	width: 678.7px;
+	height: 393.3px;
+}
+
+.table-zenter {
+	width: 706px;
+	height: 250px;
+}
+
+@media (max-width: 767px) {
+	.timetables-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.table-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0rem;
+	}
+	
+	.table-container h2 {
+		font-size: 28px;
+	}
+	.table-box {
+		transform: scale(0.5, 0.65);
+	}
+	.table-zenter {
+		transform: scale(0.48, 0.65);
+		width: 706.48px;
+		height: 250.48px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.timetables-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.table-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0rem;
+	}
+	
+	.table-container h2 {
+		font-size: 22px;
+	}
+	.table-box {
+		transform: scale(0.5, 0.65);
+	}
+	.table-zenter {
+		transform: scale(0.48, 0.65);
+		width: 706.48px;
+		height: 250.48px;
+	}
+}

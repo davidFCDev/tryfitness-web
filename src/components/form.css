@@ -1,0 +1,123 @@
+.form {
+    background-color: rgb(244, 244, 244);
+    color: black;
+    box-shadow: 0 0 10px black;
+    width: 80%;
+    height: 90%;
+    border-radius: 2px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.form .input {
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(205, 205, 205);
+    width: 90%;
+    height: 12%;
+    font-size: 15px;
+    padding: 1rem;
+    outline: none;
+}
+
+.form .input:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.form .input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.inputcheck {
+    width: 90%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+#btn-form {
+    background: #d31742;
+    background: linear-gradient(0deg, #d31742 0%, #d31742 100%);
+    border: none;
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#btn-form:before {
+    height: 0%;
+    width: 2px;
+}
+
+#btn-form:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 767px) {
+    .form-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-form-container {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        margin: 1rem 0rem 0rem 0rem;
+        box-shadow: 0 0 2px rgb(182, 182, 182);
+        background-color: rgb(250, 250, 250);
+    }
+    .form .input {
+        background-color: rgb(250, 250, 250);
+    }
+    .form span {
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .form h2 {
+        font-size: 25px;
+        padding: 0.5rem;
+    }
+    .inputcheck {
+        height: 35px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
